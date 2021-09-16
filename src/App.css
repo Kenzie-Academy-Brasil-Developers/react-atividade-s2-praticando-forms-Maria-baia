@@ -1,0 +1,104 @@
+.container{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #FFA07A;
+  color: #FF8C00;
+}
+
+input, button{
+  margin: 10px;
+  background-color: #FFA07A;
+  color: #F0F8FF;
+}
+
+.buttons{
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.label-float input{
+  border: 1px solid #FF6347;
+  border-radius: 5px;
+  outline: none;
+  min-width: 250px;
+  padding: 15px 20px;
+  font-size: 16px;
+  transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  -webkit-appearance:none;
+}
+
+.label-float input:focus{
+  border: 1px solid #FF0000;
+}
+
+.label-float input::placeholder{
+  color:transparent;
+}
+
+.label-float label{
+  pointer-events: none;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 15px;
+  transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  background-color: #FFA07A;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.label-float input:required:invalid + label{
+  color: red;
+}
+.label-float input:focus:required:invalid{
+  border: 2px solid red;
+}
+.label-float input:required:invalid + label:before{
+  content: '*';
+}
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label{
+  font-size: 13px;
+  top: 0;
+  color: #FF4500;
+}
+
+input[type='checkbox']::before {
+  content: ' ';
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  background-color: #FFA500;
+  border: 1px solid #FFD700;
+}
+input[type='checkbox']:checked::after {
+  content: ' ';
+  width: 0.2rem;
+  height: 0.5rem;
+  margin-left: 0.3rem;
+  border-color: #FFFF00;
+  border-style: solid;
+  border-width: 0 3px 3px 0;
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+button{
+  border: 0.5px solid #F0E68C;
+  border-radius: 6%;
+  padding: 5px;
+}
