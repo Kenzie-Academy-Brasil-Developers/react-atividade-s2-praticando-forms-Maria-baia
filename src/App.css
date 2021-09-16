@@ -2,14 +2,14 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  background-color: #FFA07A;
+  background-color: #F8F8FF;
   color: #FF8C00;
 }
 
 input, button{
   margin: 10px;
-  background-color: #FFA07A;
-  color: #F0F8FF;
+  background-color: #F8F8FF;
+  color: #DC143C;
 }
 
 .buttons{
@@ -56,7 +56,7 @@ input, button{
   transition: all .1s linear;
   -webkit-transition: all .1s linear;
   -moz-transition: all .1s linear;
-  background-color: #FFA07A;
+  background-color: #F8F8FF;
   padding: 4px;
   box-sizing: border-box;
 }
@@ -98,7 +98,7 @@ input[type='checkbox']:checked::after {
 }
 
 button{
-  border: 0.5px solid #F0E68C;
+  border: 0.5px solid #800000;
   border-radius: 6%;
   padding: 5px;
 }
